@@ -1,0 +1,123 @@
+:host {
+  display: block;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+}
+
+.helados-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffecd2, #fcb69f);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  padding: 20px;
+  width: 280px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.detalles {
+  margin: 40px auto 0 auto;
+  max-width: 600px;
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  padding: 25px 30px;
+  border-radius: 25px;
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(255, 78, 80, 0.5);
+  position: relative;
+  font-weight: 600;
+  user-select: none;
+  display: none;
+}
+
+.detalles h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.detalles h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 6px;
+}
+
+.detalles ul {
+  list-style: inside disc;
+  margin: 0 0 20px 0;
+  padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.detalles p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ffd6d6;
+}
+
+
+
+
+
+
+
+
+
+
